@@ -1,0 +1,36 @@
+**Creating Database Resources** 
+-------------------------------
+
+1-> Creating a User Resource
+	rails generate scaffold User name:string email:string password:string
+
+	rake db:migrate
+
+2-> Creating a Hotel Resource
+	rails generate scaffold Hotel name:string city:string country:string
+	
+	rake db:migrate
+	
+3-> Creating a HotelPics Resource
+	rails generate scaffold HotelsPic title:string description:string image:string hotel:references
+	
+	rake db:migrate
+	
+4-> Creating a Room Resource
+	rails generate scaffold Room number:integer type:string price:float hotel:references
+
+	rake db:migrate
+
+5-> Creating a ResRoom Resource
+
+	rails generate scaffold ResRoom user:references room:references hotel:references chkin_date:date chkout_date:date
+	
+	rake db:migrate
+	
+6-> Creating a Rate Resource
+
+	rails generate scaffold Rate user:references hotel:references tilte:string body:text rate:integer
+	
+	
+##################################################################
+	

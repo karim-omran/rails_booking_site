@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  hotel: 
+  tilte: MyString
+  body: MyText
+  rate: 1
+
+two:
+  user: 
+  hotel: 
+  tilte: MyString
+  body: MyText
+  rate: 1

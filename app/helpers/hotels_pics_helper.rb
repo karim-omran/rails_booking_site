@@ -1,0 +1,2 @@
+module HotelsPicsHelper
+end

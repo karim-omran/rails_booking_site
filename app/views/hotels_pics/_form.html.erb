@@ -1,0 +1,33 @@
+<%= form_for(@hotels_pic) do |f| %>
+  <% if @hotels_pic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hotels_pic.errors.count, "error") %> prohibited this hotels_pic from being saved:</h2>
+
+      <ul>
+      <% @hotels_pic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :hotel %><br />
+    <%= f.text_field :hotel %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

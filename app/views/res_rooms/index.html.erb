@@ -1,0 +1,31 @@
+<h1>Listing res_rooms</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Room</th>
+    <th>Hotel</th>
+    <th>Chkin date</th>
+    <th>Chkout date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @res_rooms.each do |res_room| %>
+  <tr>
+    <td><%= res_room.user %></td>
+    <td><%= res_room.room %></td>
+    <td><%= res_room.hotel %></td>
+    <td><%= res_room.chkin_date %></td>
+    <td><%= res_room.chkout_date %></td>
+    <td><%= link_to 'Show', res_room %></td>
+    <td><%= link_to 'Edit', edit_res_room_path(res_room) %></td>
+    <td><%= link_to 'Destroy', res_room, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Res room', new_res_room_path %>

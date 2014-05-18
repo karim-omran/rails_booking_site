@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @rate.user %>
+</p>
+
+<p>
+  <b>Hotel:</b>
+  <%= @rate.hotel %>
+</p>
+
+<p>
+  <b>Tilte:</b>
+  <%= @rate.tilte %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @rate.body %>
+</p>
+
+<p>
+  <b>Rate:</b>
+  <%= @rate.rate %>
+</p>
+
+
+<%= link_to 'Edit', edit_rate_path(@rate) %> |
+<%= link_to 'Back', rates_path %>

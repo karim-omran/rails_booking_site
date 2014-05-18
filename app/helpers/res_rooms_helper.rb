@@ -1,0 +1,2 @@
+module ResRoomsHelper
+end

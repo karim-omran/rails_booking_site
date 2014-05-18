@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @hotels_pic.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @hotels_pic.description %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @hotels_pic.image %>
+</p>
+
+<p>
+  <b>Hotel:</b>
+  <%= @hotels_pic.hotel %>
+</p>
+
+
+<%= link_to 'Edit', edit_hotels_pic_path(@hotels_pic) %> |
+<%= link_to 'Back', hotels_pics_path %>

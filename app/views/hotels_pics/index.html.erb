@@ -1,0 +1,29 @@
+<h1>Listing hotels_pics</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Image</th>
+    <th>Hotel</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @hotels_pics.each do |hotels_pic| %>
+  <tr>
+    <td><%= hotels_pic.title %></td>
+    <td><%= hotels_pic.description %></td>
+    <td><%= hotels_pic.image %></td>
+    <td><%= hotels_pic.hotel %></td>
+    <td><%= link_to 'Show', hotels_pic %></td>
+    <td><%= link_to 'Edit', edit_hotels_pic_path(hotels_pic) %></td>
+    <td><%= link_to 'Destroy', hotels_pic, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Hotels pic', new_hotels_pic_path %>

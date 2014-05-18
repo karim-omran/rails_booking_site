@@ -1,0 +1,364 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-05-18 19:38:01 +0300
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-05-18 19:38:31 +0300
+Served asset /rails.png - 200 OK (0ms)
+  [1m[36m (185.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (178.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+  [1m[35m (74.8ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (43.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140518173736')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+  [1m[35m (162.5ms)[0m  CREATE TABLE `hotels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `city` varchar(255), `country` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (33.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140518174848')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelPics (20140518174956)
+  [1m[35m (70.3ms)[0m  CREATE TABLE `hotel_pics` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` varchar(255), `image` varchar(255), `hotel_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (177.9ms)[0m  [1mCREATE INDEX `index_hotel_pics_on_hotel_id` ON `hotel_pics` (`hotel_id`)[0m
+  [1m[35m (34.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140518174956')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+  [1m[35m (474.0ms)[0m  CREATE TABLE `hotels_pics` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` varchar(255), `image` varchar(255), `hotel_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (224.1ms)[0m  [1mCREATE INDEX `index_hotels_pics_on_hotel_id` ON `hotels_pics` (`hotel_id`)[0m
+  [1m[35m (96.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140518175450')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518181221)
+  [1m[35m (109.0ms)[0m  CREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `type` varchar(255), `price` float, `hotel_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (133.6ms)[0m  [1mCREATE INDEX `index_rooms_on_hotel_id` ON `rooms` (`hotel_id`)[0m
+  [1m[35m (33.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140518181221')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518181524)
+  [1m[35m (78.6ms)[0m  CREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `type` varchar(255), `price` float, `hotels_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (166.7ms)[0m  [1mCREATE INDEX `index_rooms_on_hotels_id` ON `rooms` (`hotels_id`)[0m
+  [1m[35m (33.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140518181524')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518182630)
+  [1m[35m (148.4ms)[0m  CREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `type` varchar(255), `price` float, `hotel_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (133.2ms)[0m  [1mCREATE INDEX `index_rooms_on_hotel_id` ON `rooms` (`hotel_id`)[0m
+  [1m[35m (33.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140518182630')
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-05-18 21:29:24 +0300
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-05-18 21:29:40 +0300
+
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.0) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.0) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.0) lib/rails/engine.rb:479:in `call'
+  railties (3.2.0) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kimo/.rvm/gems/ruby-2.1.1@forRails/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-05-18 21:29:45 +0300
+Served asset /rails.png - 304 Not Modified (0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518182630)
+Migrating to CreateResRooms (20140518183827)
+  [1m[35m (118.3ms)[0m  CREATE TABLE `res_rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `room_id` int(11), `hotel_id` int(11), `chkin_date` date, `chkout_date` date, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (144.3ms)[0m  [1mCREATE INDEX `index_res_rooms_on_user_id` ON `res_rooms` (`user_id`)[0m
+  [1m[35m (135.5ms)[0m  CREATE INDEX `index_res_rooms_on_room_id` ON `res_rooms` (`room_id`)
+  [1m[36m (133.8ms)[0m  [1mCREATE INDEX `index_res_rooms_on_hotel_id` ON `res_rooms` (`hotel_id`)[0m
+  [1m[35m (32.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140518183827')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518182630)
+Migrating to CreateResRooms (20140518183827)
+Migrating to CreateRates (20140518184122)
+  [1m[35m (107.6ms)[0m  CREATE TABLE `rates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `hotel_id` int(11), `tilte` varchar(255), `body` text, `rate` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (122.1ms)[0m  [1mCREATE INDEX `index_rates_on_user_id` ON `rates` (`user_id`)[0m
+  [1m[35m (133.6ms)[0m  CREATE INDEX `index_rates_on_hotel_id` ON `rates` (`hotel_id`)
+  [1m[36m (33.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140518184122')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518182630)
+Migrating to CreateResRooms (20140518183827)
+Migrating to CreateRates (20140518184122)
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/user" for 127.0.0.1 at 2014-05-18 21:52:49 +0300
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.0) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.0) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.0) lib/rails/engine.rb:479:in `call'
+  railties (3.2.0) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kimo/.rvm/gems/ruby-2.1.1@forRails/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2014-05-18 21:53:38 +0300
+
+ActionController::RoutingError (No route matches [GET] "/user"):
+  actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.0) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.0) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.0) lib/rails/engine.rb:479:in `call'
+  railties (3.2.0) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kimo/.rvm/gems/ruby-2.1.1@forRails/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-18 21:53:49 +0300
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Compiled application.css  (1ms)  (pid 9558)
+Compiled application.js  (0ms)  (pid 9558)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 21:53:49 +0300
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 21:53:49 +0300
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-05-18 21:53:51 +0300
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (40.9ms)
+  Rendered users/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 70ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 21:53:51 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 21:53:51 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-18 21:53:57 +0300
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 21:53:57 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 21:53:57 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/hotels" for 127.0.0.1 at 2014-05-18 21:54:02 +0300
+Processing by HotelsController#index as HTML
+  [1m[36mHotel Load (0.5ms)[0m  [1mSELECT `hotels`.* FROM `hotels` [0m
+  Rendered hotels/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 21:54:02 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 21:54:02 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/hotels/new" for 127.0.0.1 at 2014-05-18 21:54:04 +0300
+Processing by HotelsController#new as HTML
+  Rendered hotels/_form.html.erb (7.0ms)
+  Rendered hotels/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 22ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 21:54:05 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 21:54:05 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/hotels" for 127.0.0.1 at 2014-05-18 21:54:08 +0300
+Processing by HotelsController#index as HTML
+  [1m[35mHotel Load (0.2ms)[0m  SELECT `hotels`.* FROM `hotels` 
+  Rendered hotels/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 21:54:09 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 21:54:09 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/hotel_pic" for 127.0.0.1 at 2014-05-18 21:54:16 +0300
+
+ActionController::RoutingError (No route matches [GET] "/hotel_pic"):
+  actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.0) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.0) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.0) lib/rails/engine.rb:479:in `call'
+  railties (3.2.0) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kimo/.rvm/gems/ruby-2.1.1@forRails/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/hotelpic" for 127.0.0.1 at 2014-05-18 21:54:19 +0300
+
+ActionController::RoutingError (No route matches [GET] "/hotelpic"):
+  actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.0) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.0) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.0) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.0) lib/rails/engine.rb:479:in `call'
+  railties (3.2.0) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/kimo/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/kimo/.rvm/gems/ruby-2.1.1@forRails/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/hotels_pics" for 127.0.0.1 at 2014-05-18 21:54:37 +0300
+Processing by HotelsPicsController#index as HTML
+  [1m[36mHotelsPic Load (0.4ms)[0m  [1mSELECT `hotels_pics`.* FROM `hotels_pics` [0m
+  Rendered hotels_pics/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 21:54:38 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 21:54:38 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/hotels_pics/new" for 127.0.0.1 at 2014-05-18 21:54:40 +0300
+Processing by HotelsPicsController#new as HTML
+  Rendered hotels_pics/_form.html.erb (34.5ms)
+  Rendered hotels_pics/new.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 59ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-18 21:54:40 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 21:54:40 +0300
+Served asset /application.css - 304 Not Modified (0ms)

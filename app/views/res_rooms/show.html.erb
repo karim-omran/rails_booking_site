@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @res_room.user %>
+</p>
+
+<p>
+  <b>Room:</b>
+  <%= @res_room.room %>
+</p>
+
+<p>
+  <b>Hotel:</b>
+  <%= @res_room.hotel %>
+</p>
+
+<p>
+  <b>Chkin date:</b>
+  <%= @res_room.chkin_date %>
+</p>
+
+<p>
+  <b>Chkout date:</b>
+  <%= @res_room.chkout_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_res_room_path(@res_room) %> |
+<%= link_to 'Back', res_rooms_path %>
