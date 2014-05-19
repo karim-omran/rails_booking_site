@@ -31,11 +31,11 @@ class User < ActiveRecord::Base
   end   
 
   def match_password(login_password="")
-    BCrypt::Password.new(self.encrypted_password) == login_password
+    BCrypt::Password.new(self.enc_password) == login_password
   end
 
   def encrypt_password
-    self.encrypted_password = BCrypt::Password.create(password) if password.present?
+    self.enc_password = BCrypt::Password.create(password) if password.present?
   end
 
   def clear_password
