@@ -80,4 +80,18 @@ class RatesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  def addrate
+    @rate_data = {"user_id" => params[:user_id], "hotel_id" => params[:hotel_id], "tilte" => params[:title], "body" => params[:body], "rate" => params[:rate]}
+
+    @rate = Rate.new(@rate_data)
+    @rate.save
+    
+
+    redirect_to '/hotels_pics/hotel_pics/'+params[:hotel_id]
+
+  end
+
+
 end

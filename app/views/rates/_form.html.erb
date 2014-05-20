@@ -13,11 +13,13 @@
 
   <div class="field">
     <%= f.label :user %><br />
-    <%= f.text_field :user %>
+    <!--<%= f.text_field :user %>-->
+    <%= f.collection_select :user_id, User.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :hotel %><br />
-    <%= f.text_field :hotel %>
+    <!--<%= f.text_field :hotel %>-->
+    <%= f.collection_select :hotel_id, Hotel.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :tilte %><br />

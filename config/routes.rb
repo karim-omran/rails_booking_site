@@ -1,11 +1,19 @@
 RailsBookingSite::Application.routes.draw do
-  resources :rates
+  resources :rates do
+  	collection do
+  		post '/addrate/' , to: 'rates#addrate'
+  	end
+  end
 
   resources :res_rooms
 
   resources :rooms
 
-  resources :hotels_pics
+  resources :hotels_pics do 
+  	collection do
+  		get '/hotel_pics/:hotel_id', to: 'hotels_pics#hotel_pics'
+  	end
+  end
 
   resources :hotels
 

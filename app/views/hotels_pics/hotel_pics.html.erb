@@ -1,0 +1,126 @@
+
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="carousel slide" id="carousel-375412">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-375412">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-375412" class="active">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-375412">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+
+					<div class="item active">
+						<%= image_tag 'booking.jpg' %>
+						<div class="carousel-caption">
+							<h4>
+								Second Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+					
+					<% @hotel_pics.each do |hotel_pic| %>
+
+						<div class="item">
+							<%= image_tag hotel_pic.image %>
+							<div class="carousel-caption">
+								<h4>
+									<%= hotel_pic.title %>
+								</h4>
+								<p>
+									<%= hotel_pic.description %>
+								</p>
+							</div>
+						</div>
+						
+					<% end %>
+
+				</div> <a class="left carousel-control" href="#carousel-375412" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-375412" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	
+	<br/>Hotel Rates
+	<% @hotel_rates.each do |rate| %>
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<dl>
+					<dt>
+						Title
+					</dt>	
+					<dd>
+						<%= rate.tilte %> By <%= rate.user.name %>
+					</dd>
+
+					<dt>
+						Rate
+					</dt>
+					<dd>
+						<%= rate.rate %>
+					</dd>
+
+					<dt>
+						Comment
+					</dt>
+					<dd>
+						<%= rate.body%>
+					</dd>
+					
+				</dl>
+			</div>
+		</div>	
+	<% end %>
+</div>
+
+
+<div class="container">
+	<label>Add Comment</label>
+	<form method='POST' action='/rates/addrate/'>
+		<table>
+			<tr>
+				<td>
+					Title:
+				</td>
+				<td>
+					<input type="text" name="title"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					Comment:
+				</td>
+				<td>
+					<textarea rows="4" cols="30" name="body"></textarea> 
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<select name="rate">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<input type="hidden" name="hotel_id" value="<%= @hotel %>">
+		<input type="hidden" name="user_id" value="1">
+		<input type="submit" value="Add Comment">
+	</form>
+</div>
+
