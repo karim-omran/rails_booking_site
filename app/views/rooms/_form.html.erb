@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :hotel %><br />
-    <%= f.text_field :hotel %>
+    <%= f.collection_select :hotel_id, Hotel.all, :id, :name %>
   </div>
   <div class="actions">
     <%= f.submit %>

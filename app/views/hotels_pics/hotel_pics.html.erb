@@ -119,7 +119,7 @@
 			</tr>
 		</table>
 		<input type="hidden" name="hotel_id" value="<%= @hotel %>">
-		<input type="hidden" name="user_id" value="1">
+		<input type="hidden" name="user_id" value="<%= session[:user_id] %>">
 		<input type="submit" value="Add Comment">
 	</form>
 </div>

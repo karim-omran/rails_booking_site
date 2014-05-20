@@ -27,7 +27,6 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     #Signup Form
-    @user = User.new
   end
 
   # GET /users/1/edit
