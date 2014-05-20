@@ -21,11 +21,14 @@
   </div>
   <div class="field">
     <%= f.label :image %><br />
-    <%= f.text_field :image %>
+    <!--<%= f.text_field :image %>-->
+    <%= f.file_field :image %>
+
   </div>
   <div class="field">
     <%= f.label :hotel %><br />
-    <%= f.text_field :hotel %>
+    <!--<%= f.text_field :hotel %>-->
+    <%= f.collection_select :hotel_id, Hotel.all, :id, :name %>
   </div>
   <div class="actions">
     <%= f.submit %>

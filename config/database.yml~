@@ -14,8 +14,10 @@ development:
   reconnect: false
   database: rails_project
   pool: 5
-  username: kimo
-  password: password
+  username: root
+
+  password: 1234
+
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -28,7 +30,7 @@ test:
   database: rails_booking_site_test
   pool: 5
   username: root
-  password:
+  password: 1234
   socket: /var/run/mysqld/mysqld.sock
 
 production:
@@ -38,5 +40,5 @@ production:
   database: rails_booking_site_production
   pool: 5
   username: root
-  password:
+  password: 1234
   socket: /var/run/mysqld/mysqld.sock

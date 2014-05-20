@@ -1,0 +1,60 @@
+
+
+ <table border="solid 1px" style="
+    width: 75%;
+    font-size: 25px;
+">
+<tbody>
+<tr>
+<th>type</th>
+<th>price</th>
+<th>number</th>
+</tr>
+<% @avil_room_list.each do |room| %>
+<tr>
+
+<td><%= room.type %></td>
+<td><%= room.price %></td>
+<td><%= room.number %></td>
+<%= form_tag({controller: "res_rooms" , action: "register" }, method: "get") do %>
+<input  name="room_id" type="hidden" value=<%= room.id %> />
+<input  name="hotel_id" type="hidden" value=<%= room.hid %> />
+<td><input type='button' id='<%= room.id %>' name='<%= room.hid %>' value='Reserve' onclick='reserve(this)'></td>
+
+  <% end %>
+  </tr>
+<% end %>
+
+
+
+</table>
+<script>
+	var ajaxRequest;
+
+	function reserve($button)
+	{
+		if(window.XMLHttpRequest)
+        	ajaxRequest = new XMLHttpRequest();
+        else
+            ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+
+        ajaxRequest.onreadystatechange = function(){
+                    if(ajaxRequest.readyState==4){
+                        document.getElementById($button.id).disabled = true;
+                    }
+                }
+                
+                ajaxRequest.open("GET", "/res_rooms/register/"+ $button.id +"/"+ $button.name );
+								
+								alert("/res_rooms/register/"+ $button.id +"/"+ $button.name ");
+								
+                ajaxRequest.send();
+
+	}
+
+
+</script>
+
+
+
+

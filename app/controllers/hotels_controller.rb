@@ -80,4 +80,24 @@ class HotelsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def search
+  	
+  	respond_to do |format|
+      format.html  #search.html.erb
+      format.json { render json: @hotel }
+      
+    end
+  end
+  def list
+      h_name = params[:h_name]
+  		h_city = params[:h_city]
+  		h_country = params[:h_country]
+  		
+ 
+  		$h_from = Date.civil(params[:h_formdate][:"start(1i)"].to_i,params[:h_formdate][:"start(2i)"].to_i,params[:h_formdate][:"start(3i)"].to_i)
+  		$h_to = Date.civil(params[:h_todate][:"end(1i)"].to_i,params[:h_todate][:"end(2i)"].to_i,params[:h_todate][:"end(3i)"].to_i)
+  		@avil_room_list=Room.getrooms(h_name,h_city,h_country,$h_from,$h_to)
+  		
+  		
+    end
 end

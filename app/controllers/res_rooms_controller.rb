@@ -41,7 +41,7 @@ class ResRoomsController < ApplicationController
   # POST /res_rooms.json
   def create
     @res_room = ResRoom.new(params[:res_room])
-
+		
     respond_to do |format|
       if @res_room.save
         format.html { redirect_to @res_room, notice: 'Res room was successfully created.' }
@@ -80,4 +80,26 @@ class ResRoomsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def register
+  	 hotel_id = params[:hotel_id]
+  		user_id = session[:user_id]
+  		room_id = params[:room_id]
+  		data={"user_id"=>user_id,
+ "room_id"=>room_id,
+ "hotel_id"=>hotel_id,
+ "chkin_date"=>$h_from,
+ "chkout_date"=>$h_to}
+  		@res_room = ResRoom.new(data)
+		
+    respond_to do |format|
+      if @res_room.save
+        format.html { redirect_to @res_room, notice: 'Res room was successfully created.' }
+        format.json { render json: @res_room, status: :created, location: @res_room }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @res_room.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
 end

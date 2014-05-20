@@ -2,4 +2,6 @@
 
 <%= render 'form' %>
 
+<%= f.collection_select :hotel_id, hotel.all, :id, :name %>
+
 <%= link_to 'Back', res_rooms_path %>

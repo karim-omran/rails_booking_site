@@ -1,13 +1,32 @@
 RailsBookingSite::Application.routes.draw do
-  resources :rates
 
-  resources :res_rooms
+  resources :rates do
+  	collection do
+  		post '/addrate/' , to: 'rates#addrate'
+  	end
+  end
+
+  resources :res_rooms do
+  	collection do
+  		get '/register/:room_id/:hotel_id', to:'res_rooms#register'
+  	end
+  	end
 
   resources :rooms
 
-  resources :hotels_pics
+  resources :hotels_pics do 
+  	collection do
+  		get '/hotel_pics/:hotel_id', to: 'hotels_pics#hotel_pics'
+  	end
+  end
 
-  resources :hotels
+  resources :hotels do
+		collection do
+			get 'search'
+			get 'list'
+			
+		end
+	end
 
   resources :users
 
@@ -77,4 +96,5 @@ RailsBookingSite::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  
 end

@@ -1,0 +1,105 @@
+class ResRoomsController < ApplicationController
+  # GET /res_rooms
+  # GET /res_rooms.json
+  def index
+    @res_rooms = ResRoom.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @res_rooms }
+    end
+  end
+
+  # GET /res_rooms/1
+  # GET /res_rooms/1.json
+  def show
+    @res_room = ResRoom.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @res_room }
+    end
+  end
+
+  # GET /res_rooms/new
+  # GET /res_rooms/new.json
+  def new
+    @res_room = ResRoom.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @res_room }
+    end
+  end
+
+  # GET /res_rooms/1/edit
+  def edit
+    @res_room = ResRoom.find(params[:id])
+  end
+
+  # POST /res_rooms
+  # POST /res_rooms.json
+  def create
+    @res_room = ResRoom.new(params[:res_room])
+		
+    respond_to do |format|
+      if @res_room.save
+        format.html { redirect_to @res_room, notice: 'Res room was successfully created.' }
+        format.json { render json: @res_room, status: :created, location: @res_room }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @res_room.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /res_rooms/1
+  # PUT /res_rooms/1.json
+  def update
+    @res_room = ResRoom.find(params[:id])
+
+    respond_to do |format|
+      if @res_room.update_attributes(params[:res_room])
+        format.html { redirect_to @res_room, notice: 'Res room was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @res_room.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /res_rooms/1
+  # DELETE /res_rooms/1.json
+  def destroy
+    @res_room = ResRoom.find(params[:id])
+    @res_room.destroy
+
+    respond_to do |format|
+      format.html { redirect_to res_rooms_url }
+      format.json { head :no_content }
+    end
+  end
+  def register
+  	 hotel_id = params[:hotel_id]
+  		user_id = params[:user_id]
+  		room_id = params[:room_id]
+  		data={"user_id"=>user_id,
+ "room_id"=>room_id,
+ "hotel_id"=>hotel_id,
+ "chkin_date"=>$h_from,
+ "chkout_date"=>$h_to}
+  		@res_room = ResRoom.new(data)
+		
+    respond_to do |format|
+      if @res_room.save
+        format.html { redirect_to @res_room, notice: 'Res room was successfully created.' }
+        format.json { render json: @res_room, status: :created, location: @res_room }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @res_room.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
+end
