@@ -362,6 +362,7 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-18 21:54:40 +0300
 Served asset /application.css - 304 Not Modified (0ms)
+<<<<<<< HEAD
   [1m[36m (387.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
   [1m[35m (385.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
   [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
@@ -511,6 +512,33 @@ SyntaxError (/home/ashraf/ruby/rails_projects/rails_booking_site/app/controllers
   activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
   actionpack (3.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
   activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `_run__356755215096159100__call__4517125404218284055__callbacks'
+=======
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-05-19 15:39:45 +0200
+
+Mysql2::Error (Access denied for user 'kimo'@'localhost' (using password: YES)):
+  mysql2 (0.3.16) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.16) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (3.2.0) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `new'
+  activerecord (3.2.0) lib/active_record/connection_adapters/mysql2_adapter.rb:16:in `mysql2_connection'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:277:in `new_connection'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:287:in `checkout_new_connection'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:235:in `block (2 levels) in checkout'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `loop'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:230:in `block in checkout'
+  /home/omar/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `checkout'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:95:in `connection'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
+  activerecord (3.2.0) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.0) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+  actionpack (3.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `_run__4448866612253776543__call__2581876766459467828__callbacks'
+>>>>>>> 29e24291c1142f466b767074a05341f1379f8b13
   activesupport (3.2.0) lib/active_support/callbacks.rb:405:in `__run_callback'
   activesupport (3.2.0) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
   activesupport (3.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
@@ -532,6 +560,7 @@ SyntaxError (/home/ashraf/ruby/rails_projects/rails_booking_site/app/controllers
   rack (1.4.5) lib/rack/content_length.rb:14:in `call'
   railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
   rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+<<<<<<< HEAD
   /home/ashraf/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /home/ashraf/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /home/ashraf/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -585,6 +614,122 @@ SyntaxError (/home/ashraf/ruby/rails_projects/rails_booking_site/app/controllers
   actionpack (3.2.0) lib/action_dispatch/middleware/reloader.rb:65:in `call'
   actionpack (3.2.0) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
   actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+=======
+  /home/omar/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/omar/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/omar/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.8ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.5ms)
+  [1m[36m (130.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (245.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+  [1m[35m (169.8ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (54.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140518173736')[0m
+Migrating to CreateHotels (20140518174848)
+  [1m[35m (155.7ms)[0m  CREATE TABLE `hotels` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `city` varchar(255), `country` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (66.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140518174848')[0m
+Migrating to CreateHotelsPics (20140518175450)
+  [1m[35m (177.0ms)[0m  CREATE TABLE `hotels_pics` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` varchar(255), `image` varchar(255), `hotel_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (245.2ms)[0m  [1mCREATE INDEX `index_hotels_pics_on_hotel_id` ON `hotels_pics` (`hotel_id`)[0m
+  [1m[35m (55.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140518175450')
+Migrating to CreateRooms (20140518182630)
+  [1m[36m (133.0ms)[0m  [1mCREATE TABLE `rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `number` int(11), `type` varchar(255), `price` float, `hotel_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (256.2ms)[0m  CREATE INDEX `index_rooms_on_hotel_id` ON `rooms` (`hotel_id`)
+  [1m[36m (55.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140518182630')[0m
+Migrating to CreateResRooms (20140518183827)
+  [1m[35m (177.4ms)[0m  CREATE TABLE `res_rooms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `room_id` int(11), `hotel_id` int(11), `chkin_date` date, `chkout_date` date, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (313.4ms)[0m  [1mCREATE INDEX `index_res_rooms_on_user_id` ON `res_rooms` (`user_id`)[0m
+  [1m[35m (256.1ms)[0m  CREATE INDEX `index_res_rooms_on_room_id` ON `res_rooms` (`room_id`)
+  [1m[36m (245.3ms)[0m  [1mCREATE INDEX `index_res_rooms_on_hotel_id` ON `res_rooms` (`hotel_id`)[0m
+  [1m[35m (55.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140518183827')
+Migrating to CreateRates (20140518184122)
+  [1m[36m (132.6ms)[0m  [1mCREATE TABLE `rates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `hotel_id` int(11), `tilte` varchar(255), `body` text, `rate` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (223.1ms)[0m  CREATE INDEX `index_rates_on_user_id` ON `rates` (`user_id`)
+  [1m[36m (245.1ms)[0m  [1mCREATE INDEX `index_rates_on_hotel_id` ON `rates` (`hotel_id`)[0m
+  [1m[35m (45.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140518184122')
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 15:57:07 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 15:57:07 +0200
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 15:57:07 +0200
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-05-19 15:57:09 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (59.6ms)
+  Rendered users/new.html.erb within layouts/application (91.9ms)
+Completed 200 OK in 111ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 15:57:12 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-05-19 15:58:01 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (6.0ms)
+  Rendered users/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 15:58:03 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hotels" for 127.0.0.1 at 2014-05-19 15:58:08 +0200
+Processing by HotelsController#index as HTML
+  [1m[35mHotel Load (0.4ms)[0m  SELECT `hotels`.* FROM `hotels` 
+  Rendered hotels/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotels/new" for 127.0.0.1 at 2014-05-19 15:58:11 +0200
+Processing by HotelsController#new as HTML
+  Rendered hotels/_form.html.erb (4.7ms)
+  Rendered hotels/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 19ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hotels" for 127.0.0.1 at 2014-05-19 15:58:13 +0200
+Processing by HotelsController#index as HTML
+  [1m[36mHotel Load (0.2ms)[0m  [1mSELECT `hotels`.* FROM `hotels` [0m
+  Rendered hotels/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hotels/new" for 127.0.0.1 at 2014-05-19 15:58:16 +0200
+Processing by HotelsController#new as HTML
+  Rendered hotels/_form.html.erb (3.0ms)
+  Rendered hotels/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-05-19 15:58:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  actionpack (3.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+>>>>>>> 29e24291c1142f466b767074a05341f1379f8b13
   actionpack (3.2.0) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
   railties (3.2.0) lib/rails/rack/logger.rb:26:in `call_app'
   railties (3.2.0) lib/rails/rack/logger.rb:16:in `call'
@@ -599,6 +744,7 @@ SyntaxError (/home/ashraf/ruby/rails_projects/rails_booking_site/app/controllers
   rack (1.4.5) lib/rack/content_length.rb:14:in `call'
   railties (3.2.0) lib/rails/rack/log_tailer.rb:14:in `call'
   rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+<<<<<<< HEAD
   /home/ashraf/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
   /home/ashraf/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
   /home/ashraf/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
@@ -4982,4 +5128,1673 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-20 10:40:50 +0200
+=======
+  /home/omar/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/omar/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/omar/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/hotels" for 127.0.0.1 at 2014-05-19 15:58:43 +0200
+Processing by HotelsController#index as HTML
+  [1m[35mHotel Load (0.2ms)[0m  SELECT `hotels`.* FROM `hotels` 
+  Rendered hotels/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hotels_pics" for 127.0.0.1 at 2014-05-19 15:59:30 +0200
+Processing by HotelsPicsController#index as HTML
+  [1m[36mHotelsPic Load (0.5ms)[0m  [1mSELECT `hotels_pics`.* FROM `hotels_pics` [0m
+  Rendered hotels_pics/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hotels_pics/new" for 127.0.0.1 at 2014-05-19 15:59:32 +0200
+Processing by HotelsPicsController#new as HTML
+  Rendered hotels_pics/_form.html.erb (60.9ms)
+  Rendered hotels_pics/new.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 77ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/hotels_pics" for 127.0.0.1 at 2014-05-19 15:59:40 +0200
+Processing by HotelsPicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "hotels_pic"=>{"title"=>"", "description"=>"", "image"=>"", "hotel"=>""}, "commit"=>"Create Hotels pic"}
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::AssociationTypeMismatch (Hotel(#35167380) expected, got String(#16853800)):
+  app/controllers/hotels_pics_controller.rb:43:in `new'
+  app/controllers/hotels_pics_controller.rb:43:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started POST "/hotels_pics" for 127.0.0.1 at 2014-05-19 15:59:57 +0200
+Processing by HotelsPicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "hotels_pic"=>{"title"=>"", "description"=>"", "image"=>"", "hotel"=>""}, "commit"=>"Create Hotels pic"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::AssociationTypeMismatch (Hotel(#35167380) expected, got String(#16853800)):
+  app/controllers/hotels_pics_controller.rb:43:in `new'
+  app/controllers/hotels_pics_controller.rb:43:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started POST "/hotels_pics" for 127.0.0.1 at 2014-05-19 16:00:00 +0200
+Processing by HotelsPicsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "hotels_pic"=>{"title"=>"", "description"=>"", "image"=>"", "hotel"=>""}, "commit"=>"Create Hotels pic"}
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::AssociationTypeMismatch (Hotel(#35167380) expected, got String(#16853800)):
+  app/controllers/hotels_pics_controller.rb:43:in `new'
+  app/controllers/hotels_pics_controller.rb:43:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 16:02:36 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-05-19 16:02:40 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (5.9ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 16:02:56 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"omar", "email"=>"omar@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `updated_at`) VALUES ('2014-05-19 14:02:56', 'omar@yahoo.com', 'omar', '54889', '2014-05-19 14:02:56')
+  [1m[36m (105.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/users/1
+Completed 302 Found in 239ms (ActiveRecord: 106.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-05-19 16:02:56 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 4.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 16:03:11 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-05-19 16:05:17 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-05-19 16:38:34 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 6743ms
+
+ActionView::Template::Error (undefined method `signup_path' for #<#<Class:0x00000002cdf8f0>:0x00000004312dc0>):
+    11: 		<h1>Ruby Source</h1>
+    12: 		<%unless session[:user_id]%>
+    13: 			<ul class="nav">
+    14: 				<li><%= link_to :Signup , :signup, class: "nav_links"%></li>|
+    15: 				<li><%= link_to :Login , :login, class: "nav_links"%></li>	
+    16: 			</ul>
+    17: 		<%else%>
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__3272667254953425131_35109440'
+  app/controllers/users_controller.rb:29:in `new'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 16:47:02 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 6253ms
+
+ActionView::Template::Error (undefined method `signup_path' for #<#<Class:0x0000000369d090>:0x00000003b4fb10>):
+    11: 		<h1>Ruby Source</h1>
+    12: 		<%unless session[:user_id]%>
+    13: 			<ul class="nav">
+    14: 				<li><%= link_to :Signup , :signup, class: "nav_links"%></li>|
+    15: 				<li><%= link_to :Login , :login, class: "nav_links"%></li>	
+    16: 			</ul>
+    17: 		<%else%>
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2364610348927171184_30801800'
+  app/controllers/users_controller.rb:7:in `index'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 16:47:25 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 16:47:25 +0200
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 16:47:25 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-05-19 16:47:34 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (9.3ms)
+  Rendered users/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 16:47:34 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 16:47:34 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 16:47:36 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 16:47:36 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 16:47:36 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-05-19 16:47:37 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (5.6ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 16:47:37 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 16:47:37 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 18:10:09 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered users/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 105ms (Views: 54.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:10:10 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:10:10 +0200
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 18:10:15 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:10:15 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:10:15 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:10:19 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "username_or_email"=>"das", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `username_or_email' for #<Class:0x00000003c348c8>):
+  app/models/user.rb:23:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:13:00 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "username_or_email"=>"das", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `username_or_email' for #<Class:0x00000003c348c8>):
+  app/models/user.rb:23:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 18:13:04 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:13:04 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:13:04 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:13:07 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"das", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `username_or_email' for #<Class:0x00000003c348c8>):
+  app/models/user.rb:23:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:15:42 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"das", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `username_or_email' for #<Class:0x00000003c348c8>):
+  app/models/user.rb:23:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:16:32 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"das", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `username_or_email' for #<Class:0x00000003e38610>):
+  app/models/user.rb:23:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 18:16:38 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:16:38 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:16:38 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:16:42 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"sa", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `username_or_email' for #<Class:0x00000003e38610>):
+  app/models/user.rb:23:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:17:18 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"sa", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `username_or_email' for #<Class:0x000000041ae5b0>):
+  app/models/user.rb:23:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:19:36 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"sa", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'sa' LIMIT 1
+  Rendered sessions/login.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 71ms (Views: 11.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:19:36 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:19:36 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:19:40 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 12ms
+
+NameError (undefined local variable or method `encrypted_password' for #<User:0x000000024190e0>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:21:02 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1
+Completed 500 Internal Server Error in 15ms
+
+NameError (undefined local variable or method `encrypted_password' for #<User:0x00000003f4dd20>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:26:10 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 22ms
+
+NameError (uninitialized constant User::BCrypt):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:32:09 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:32:09 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-05-19 18:32:14 +0200
+Served asset /rails.png - 200 OK (77ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 18:32:19 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` 
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 16ms (Views: 6.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:32:19 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:32:19 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 18:32:51 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:32:52 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:32:52 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-05-19 18:32:55 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (54.5ms)
+  Rendered users/new.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 81ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:32:55 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:32:55 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 18:33:07 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"ashraf", "email"=>"ashraf@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'ashraf' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'ashraf@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  Rendered users/_form.html.erb (8.0ms)
+  Rendered users/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 86ms (Views: 16.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:33:07 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:33:07 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 18:33:14 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"ashraf", "email"=>"ashraf@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'ashraf' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'ashraf@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 7ms
+
+NameError (uninitialized constant User::BCrypt):
+  app/models/user.rb:41:in `encrypt_password'
+  app/controllers/users_controller.rb:42:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 18:41:46 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"ashraf", "email"=>"ashraf@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'ashraf' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'ashraf@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 9ms
+
+NameError (uninitialized constant User::BCrypt):
+  app/models/user.rb:41:in `encrypt_password'
+  app/controllers/users_controller.rb:42:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:41:48 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:41:48 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 18:42:03 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"ashraf", "email"=>"ashraf@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'ashraf' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'ashraf@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered users/_form.html.erb (4.9ms)
+  Rendered users/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 73ms (Views: 27.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:42:04 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:42:04 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 18:42:09 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"ashraf", "email"=>"ashraf@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'ashraf' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'ashraf@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 7ms
+
+NameError (uninitialized constant User::BCrypt):
+  app/models/user.rb:41:in `encrypt_password'
+  app/controllers/users_controller.rb:42:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 18:43:29 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"ashraf", "email"=>"ashraf@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'ashraf' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'ashraf@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 7ms
+
+NameError (uninitialized constant User::BCrypt):
+  app/models/user.rb:41:in `encrypt_password'
+  app/controllers/users_controller.rb:42:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 18:43:40 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"ashraf", "email"=>"ashraf@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'ashraf' LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'ashraf@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 40ms
+
+NoMethodError (undefined method `salt=' for #<User:0x0000000434ef28>):
+  app/models/user.rb:41:in `encrypt_password'
+  app/controllers/users_controller.rb:42:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 18:43:58 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:43:58 +0200
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:43:58 +0200
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 18:44:00 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:44:00 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:44:00 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:44:04 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1
+Completed 500 Internal Server Error in 12ms
+
+NameError (undefined local variable or method `encrypted_password' for #<User:0x000000041a02d0>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:45:08 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 4ms
+
+NameError (undefined local variable or method `encrypted_password' for #<User:0x00000003f0ac00>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:46:00 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1
+Completed 500 Internal Server Error in 23ms
+
+NameError (undefined local variable or method `salt' for #<User:0x000000045ae188>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 18:46:06 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:46:07 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:46:07 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:46:12 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms
+
+NameError (undefined local variable or method `salt' for #<User:0x000000040ce0f0>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:50:15 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `salt' for #<User:0x00000003e09540>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:51:15 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 16ms
+
+NameError (undefined local variable or method `encrypted_password' for #<User:0x0000000445c4b0>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 18:52:29 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:52:29 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:52:29 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:52:38 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1
+Completed 500 Internal Server Error in 17ms
+
+NameError (undefined local variable or method `salt' for #<User:0x000000029a6620>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:54:13 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 23ms
+
+NameError (undefined local variable or method `salt' for #<User:0x000000040db638>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 18:54:32 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 18:54:32 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 18:54:32 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 18:55:06 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 38ms
+
+NameError (undefined local variable or method `salt' for #<User:0x000000040ec208>):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 19:09:11 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:09:11 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:09:11 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 19:09:12 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:09:12 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:09:12 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 19:09:16 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1
+Completed 500 Internal Server Error in 21ms
+
+BCrypt::Errors::InvalidSalt (invalid salt):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-05-19 19:09:24 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (9.2ms)
+  Rendered users/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:09:24 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:09:24 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 19:09:36 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"ashraf", "email"=>"ashraf@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'ashraf' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'ashraf@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `name`, `salt`, `updated_at`) VALUES ('2014-05-19 17:09:36', 'ashraf@yahoo.com', '$2a$10$iBi8vGxrUs2RTS6cA0t7Au.mH.TtcIaLDP9Wm27OF7wCSDXqGdtUG', 'ashraf', NULL, '2014-05-19 17:09:36')
+  [1m[36m (84.6ms)[0m  [1mCOMMIT[0m
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 242ms (Views: 9.9ms | ActiveRecord: 86.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:09:36 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:09:36 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 19:09:46 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:09:46 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:09:46 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 19:09:50 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"ashraf", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'ashraf' LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+BCrypt::Errors::InvalidSalt (invalid salt):
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 19:15:02 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:15:03 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:15:03 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 19:15:07 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 22ms
+
+BCrypt::Errors::InvalidHash (invalid hash):
+  app/models/user.rb:34:in `new'
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-05-19 19:15:20 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:15:20 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:15:20 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 19:15:43 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"anto", "email"=>"anto@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'anto' LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'anto@yahoo.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 95ms
+
+NoMethodError (undefined method `encrypted_password=' for #<User:0x00000004167e80>):
+  app/models/user.rb:38:in `encrypt_password'
+  app/controllers/users_controller.rb:42:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-05-19 19:17:20 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (5.6ms)
+  Rendered users/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:17:20 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:17:20 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 19:17:33 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"omar", "email"=>"omar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'omar' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'omar@yahoo.com' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 102ms
+
+NoMethodError (undefined method `encrypted_password=' for #<User:0x0000000482b118>):
+  app/models/user.rb:38:in `encrypt_password'
+  app/controllers/users_controller.rb:42:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-05-19 19:19:27 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.8ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 19ms (Views: 10.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:19:27 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:19:27 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 19:19:37 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"omar", "email"=>"omar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'omar' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'omar@yahoo.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `name`, `updated_at`) VALUES ('2014-05-19 17:19:37', 'omar@yahoo.com', NULL, 'omar', '2014-05-19 17:19:37')[0m
+  [1m[35m (45.6ms)[0m  COMMIT
+  Rendered users/_form.html.erb (5.9ms)
+  Rendered users/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 238ms (Views: 13.7ms | ActiveRecord: 46.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:19:37 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:19:37 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 19:19:46 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:19:46 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:19:46 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 19:19:51 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+BCrypt::Errors::InvalidHash (invalid hash):
+  app/models/user.rb:34:in `new'
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-05-19 19:20:30 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (9.0ms)
+  Rendered users/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 51ms (Views: 29.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:20:31 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:20:31 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 19:20:38 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"omar", "email"=>"omar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'omar' LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'omar@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `name`, `updated_at`) VALUES ('2014-05-19 17:20:38', 'omar@yahoo.com', NULL, 'omar', '2014-05-19 17:20:38')
+  [1m[36m (83.1ms)[0m  [1mCOMMIT[0m
+  Rendered users/_form.html.erb (4.4ms)
+  Rendered users/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 297ms (Views: 11.2ms | ActiveRecord: 84.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:20:38 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:20:38 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-05-19 19:26:46 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.8ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 19ms (Views: 10.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:26:47 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:26:47 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 19:27:04 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"omar", "email"=>"omar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'omar' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'omar@yahoo.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 9ms
+
+ArgumentError (wrong number of arguments (1 for 2..3)):
+  app/models/user.rb:40:in `encrypt_password'
+  app/controllers/users_controller.rb:42:in `create'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 19:28:12 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"omar", "email"=>"omar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'omar' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'omar@yahoo.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `encrypted_password`, `name`, `updated_at`) VALUES ('2014-05-19 17:28:12', 'omar@yahoo.com', '$2a$10$6nifAs4gArwS5LR8MeibxObrNvB56AMDNQMGIrEry1f4y6Gg7dvkS', 'omar', '2014-05-19 17:28:12')[0m
+  [1m[35m (60.6ms)[0m  COMMIT
+  Rendered users/_form.html.erb (4.7ms)
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 259ms (Views: 11.7ms | ActiveRecord: 63.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:28:12 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:28:12 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 19:28:52 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:28:52 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:28:52 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 19:28:56 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1[0m
+Completed 500 Internal Server Error in 28ms
+
+BCrypt::Errors::InvalidHash (invalid hash):
+  app/models/user.rb:34:in `new'
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 19:34:47 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1
+Redirected to http://0.0.0.0:3000/home
+Completed 302 Found in 109ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2014-05-19 19:34:47 +0200
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  Rendered sessions/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 19:34:47 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 19:34:47 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-05-19 19:34:55 +0200
+Processing by SessionsController#logout as HTML
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2014-05-19 19:38:31 +0200
+Processing by SessionsController#home as HTML
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-05-19 19:38:31 +0200
+Served asset /rails.png - 304 Not Modified (1ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518182630)
+Migrating to CreateResRooms (20140518183827)
+Migrating to CreateRates (20140518184122)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518182630)
+Migrating to CreateResRooms (20140518183827)
+Migrating to CreateRates (20140518184122)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518182630)
+Migrating to CreateResRooms (20140518183827)
+Migrating to CreateRates (20140518184122)
+  [1m[35m (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started GET "/users" for 127.0.0.1 at 2014-05-19 20:47:39 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT `users`.* FROM `users` [0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 68ms (Views: 24.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:47:39 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:47:39 +0200
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 20:47:41 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:47:41 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:47:41 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 20:47:46 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"omar", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'omar' LIMIT 1
+Completed 500 Internal Server Error in 15ms
+
+BCrypt::Errors::InvalidHash (invalid hash):
+  app/models/user.rb:34:in `new'
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (13.5ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.4ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-05-19 20:47:52 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (61.2ms)
+  Rendered users/new.html.erb within layouts/application (90.6ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:47:52 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:47:52 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 20:48:03 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"om", "email"=>"omar@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'om' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'omar@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered users/_form.html.erb (7.4ms)
+  Rendered users/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 135ms (Views: 17.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:48:03 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:48:03 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 20:48:19 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"om", "email"=>"omar1@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'om' LIMIT 1
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'omar1@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  Rendered users/_form.html.erb (3.6ms)
+  Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 18ms (Views: 9.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:48:19 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:48:19 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 20:48:33 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"karim", "email"=>"karim@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'karim' LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'karim@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered users/_form.html.erb (10.2ms)
+  Rendered users/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 24ms (Views: 15.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:48:33 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:48:33 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 20:48:39 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"karim", "email"=>"karim@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'karim' LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'karim@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `updated_at`) VALUES ('2014-05-19 18:48:40', 'karim@yahoo.com', 'karim', NULL, '2014-05-19 18:48:40')
+  [1m[36m (84.9ms)[0m  [1mCOMMIT[0m
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 285ms (Views: 10.5ms | ActiveRecord: 86.2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:48:40 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:48:40 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 20:48:43 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:48:43 +0200
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:48:43 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 20:48:46 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"karim", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'karim' LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+BCrypt::Errors::InvalidHash (invalid hash):
+  app/models/user.rb:34:in `new'
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 20:48:53 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"karim", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`name` = 'karim' LIMIT 1[0m
+Completed 500 Internal Server Error in 3ms
+
+BCrypt::Errors::InvalidHash (invalid hash):
+  app/models/user.rb:34:in `new'
+  app/models/user.rb:34:in `match_password'
+  app/models/user.rb:26:in `authenticate'
+  app/controllers/sessions_controller.rb:23:in `login_attempt'
+
+
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/omar/.rvm/gems/ruby-2.1.1/gems/actionpack-3.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-05-19 20:51:10 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 19ms (Views: 9.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:51:10 +0200
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:51:10 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 20:51:25 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"mai", "email"=>"mai@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'mai' LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'mai@yahoo.com' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `users` (`created_at`, `email`, `name`, `password`, `updated_at`) VALUES ('2014-05-19 18:51:25', 'mai@yahoo.com', 'mai', NULL, '2014-05-19 18:51:25')[0m
+  [1m[35m (40.8ms)[0m  COMMIT
+  Rendered users/_form.html.erb (6.6ms)
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 236ms (Views: 16.8ms | ActiveRecord: 42.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:51:25 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:51:25 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateUsers (20140518173736)
+Migrating to CreateHotels (20140518174848)
+Migrating to CreateHotelsPics (20140518175450)
+Migrating to CreateRooms (20140518182630)
+Migrating to CreateResRooms (20140518183827)
+Migrating to CreateRates (20140518184122)
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-19 20:52:55 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "user"=>{"name"=>"noha", "email"=>"noha@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Signup"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'noha' LIMIT 1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 FROM `users` WHERE `users`.`email` = BINARY 'noha@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `users` (`created_at`, `email`, `enc_password`, `name`, `updated_at`) VALUES ('2014-05-19 18:52:55', 'noha@yahoo.com', '$2a$10$pkgD4Iv5ybtURgnRsAi72OhtxWTi7OuD42A01jjKHP/efQnaei/lq', 'noha', '2014-05-19 18:52:55')
+  [1m[36m (78.4ms)[0m  [1mCOMMIT[0m
+  Rendered users/_form.html.erb (9.6ms)
+  Rendered users/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 329ms (Views: 32.6ms | ActiveRecord: 82.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:52:56 +0200
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:52:56 +0200
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-05-19 20:52:58 +0200
+Processing by SessionsController#login as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:52:58 +0200
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:52:58 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions/login_attempt" for 127.0.0.1 at 2014-05-19 20:53:08 +0200
+Processing by SessionsController#login_attempt as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4uHL9PZBlk5Esf5jNAHistAp3oelnlXisKi5pl4On5k=", "name_or_email"=>"noha", "login_password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`name` = 'noha' LIMIT 1
+Redirected to http://0.0.0.0:3000/home
+Completed 302 Found in 110ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2014-05-19 20:53:08 +0200
+Processing by SessionsController#home as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  Rendered sessions/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:53:08 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:53:08 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/setting" for 127.0.0.1 at 2014-05-19 20:53:12 +0200
+Processing by SessionsController#setting as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1
+  Rendered sessions/setting.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:53:12 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:53:12 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2014-05-19 20:53:13 +0200
+Processing by SessionsController#profile as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  Rendered sessions/profile.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-19 20:53:13 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-19 20:53:13 +0200
+>>>>>>> 29e24291c1142f466b767074a05341f1379f8b13
 Served asset /application.js - 304 Not Modified (0ms)
