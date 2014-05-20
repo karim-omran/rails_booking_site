@@ -2,7 +2,7 @@ class Room < ActiveRecord::Base
   belongs_to :hotel
    self.inheritance_column = nil
   def self.getrooms(name,from_date,to_date)
-@list=Room.find_by_sql(["select r.id,r.number, r.type , r.price from rooms as r , hotels as h 
+@list=Room.find_by_sql(["select r.number, r.type , r.price from rooms as r , hotels as h 
  where  r.hotel_id = h.id and  h.name=? and r.id not in(select  distinct room_id
  from res_rooms as res
 where  res.chkin_date   between  ? and ?

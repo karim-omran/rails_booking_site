@@ -11,7 +11,6 @@ RailsBookingSite::Application.routes.draw do
   resources :hotels do
 		collection do
 			get 'search'
-			get 'list'
 		end
 	end
 

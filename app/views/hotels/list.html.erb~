@@ -1,0 +1,39 @@
+
+<table border="solid 1px" style="
+    width: 75%;
+    font-size: 25px;
+">
+<tbody><tr>
+<th>ID</th>
+<th>type</th>
+<th>price</th>
+<th>number</th>
+</tr>
+<tr>
+
+<td>1</td>
+<td>royal</td>
+<td>200.0</td>
+<td>1</td>
+
+
+</tr>
+</tbody></table>
+<tr>
+<th>ID</th>
+<th>type</th>
+<th>price</th>
+<th>number</th>
+</tr>
+<tr>
+<% @avil_room_list.each do |room| %>
+
+<td><%= room.id %></td>
+<td><%= room.type %></td>
+<td><%= room.price %></td>
+<td><%= room.number %></td>
+<% end %>
+
+
+</tr>
+</table>
