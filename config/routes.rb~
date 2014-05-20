@@ -1,27 +1,24 @@
 RailsBookingSite::Application.routes.draw do
-<<<<<<< HEAD
  
-=======
->>>>>>> 29e24291c1142f466b767074a05341f1379f8b13
   resources :rates
 
-  resources :res_rooms
+  resources :res_rooms do
+  	collection do
+  		get '/register/:room_id/:hotel_id', to:'res_rooms#res_rooms'
+  	end
+  	end
 
   resources :rooms
 
   resources :hotels_pics
 
-<<<<<<< HEAD
   resources :hotels do
 		collection do
 			get 'search'
+			get 'list'
+			
 		end
 	end
-
-  resources :users
-
-=======
-  resources :hotels
 
   resources :users
 
@@ -33,8 +30,8 @@ RailsBookingSite::Application.routes.draw do
   match "home", :to => "sessions#home"
   match "profile", :to => "sessions#profile"
   match "setting", :to => "sessions#setting"
-
->>>>>>> 29e24291c1142f466b767074a05341f1379f8b13
+  
+ 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -91,8 +88,5 @@ RailsBookingSite::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-<<<<<<< HEAD
   
-=======
->>>>>>> 29e24291c1142f466b767074a05341f1379f8b13
 end

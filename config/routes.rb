@@ -2,7 +2,11 @@ RailsBookingSite::Application.routes.draw do
  
   resources :rates
 
-  resources :res_rooms
+  resources :res_rooms do
+  	collection do
+  		get '/register/:room_id/:hotel_id', to:'res_rooms#register'
+  	end
+  	end
 
   resources :rooms
 
@@ -12,6 +16,7 @@ RailsBookingSite::Application.routes.draw do
 		collection do
 			get 'search'
 			get 'list'
+			
 		end
 	end
 
@@ -25,7 +30,8 @@ RailsBookingSite::Application.routes.draw do
   match "home", :to => "sessions#home"
   match "profile", :to => "sessions#profile"
   match "setting", :to => "sessions#setting"
-
+  
+ 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

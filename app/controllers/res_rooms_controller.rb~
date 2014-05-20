@@ -82,7 +82,7 @@ class ResRoomsController < ApplicationController
   end
   def register
   	 hotel_id = params[:hotel_id]
-  		user_id = session[:user_id]
+  		user_id = params[:user_id]
   		room_id = params[:room_id]
   		data={"user_id"=>user_id,
  "room_id"=>room_id,
