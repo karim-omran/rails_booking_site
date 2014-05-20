@@ -17,7 +17,7 @@
     <td><%= user.password %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Destroy', destroy_user_path(user) ,:onclick => 'return deleteConfirm()' %></td>
   </tr>
 <% end %>
 </table>
@@ -25,3 +25,15 @@
 <br />
 
 <%= link_to 'New User', new_user_path %>
+
+<script type="text/javascript">
+  function deleteConfirm() {
+    var r = confirm("Are you sure ?");
+    if (r == true) {
+       return true;
+    } else {
+       return false;
+    }
+  }
+  
+</script>

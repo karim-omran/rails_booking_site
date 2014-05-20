@@ -34,7 +34,7 @@ class SessionsController < ApplicationController
 
 	def logout
 		session[:user_id] = nil
-		redirect_to :action => 'login'
+		render "login"
 	end
 
 end
