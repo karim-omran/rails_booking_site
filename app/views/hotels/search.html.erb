@@ -1,0 +1,28 @@
+<%= form_tag("list", method: "get") do %>
+<div>
+   <%= label_tag(:q, "Hotel Name:") %>
+  <%= text_field_tag(:h_name) %>
+  </div>
+  <div>
+   <%= label_tag(:q, "City Name:") %>
+  <%= text_field_tag(:h_city) %>
+  </div>
+  
+  <div>
+  <%= label_tag(:q, "Country Name:") %>
+  <%= text_field_tag(:h_country) %>
+  </div>
+  
+  <div>
+  <%= label_tag(:q, "Form:") %>
+     <%= date_select(:h_formdate,:start) %>
+  </div>
+	 <div>
+	 <%= label_tag(:q, "To:") %>
+     <%= date_select(:h_todate,:end) %>
+  </div>
+   <div>
+    <%= submit_tag("Search") %>
+  </div>
+ 
+<% end %>

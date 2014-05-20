@@ -96,7 +96,7 @@ class HotelsController < ApplicationController
  
   		$h_from = Date.civil(params[:h_formdate][:"start(1i)"].to_i,params[:h_formdate][:"start(2i)"].to_i,params[:h_formdate][:"start(3i)"].to_i)
   		$h_to = Date.civil(params[:h_todate][:"end(1i)"].to_i,params[:h_todate][:"end(2i)"].to_i,params[:h_todate][:"end(3i)"].to_i)
-  		@avil_room_list=Room.getrooms(h_name,h_city,h_country,$h_from,$h_to)
+  		@avil_room_list=Room.getrooms(h_name,$h_from,$h_to)
   		
   		
     end
